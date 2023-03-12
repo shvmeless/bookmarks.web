@@ -1,0 +1,65 @@
+// IMPORTS
+@import "../../styles/extends";
+@import "../../styles/vars";
+
+// DEFAULT
+.Switch {
+  @extend %flex-row-nowrap;
+  @extend %flex-center;
+  padding: 0 1rem;
+  height: $size;
+
+  
+  border: solid $border-width $primary-border;
+  background-color: $primary-extra;
+  border-radius: $border-radius;
+  color: $primary-text;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:focus {
+    border: solid $border-width $primary-border-highlight;
+    background-color: $primary-extra-highlight;
+    color: $primary-text-highlight;
+  }
+
+  &:hover {
+    border: solid $border-width $primary-border-highlight;
+    background-color: $primary-extra-highlight;
+    color: $primary-text-highlight;
+  }
+}
+
+// FAVORITE
+.Switch.favorite.active {
+  border: solid $border-width $favorite-border;
+  background-color: $favorite-background;
+  color: $favorite-text;
+  &:focus {
+    border: solid $border-width $favorite-border-highlight;
+    background-color: $favorite-background-highlight;
+    color: $favorite-text-highlight;
+  }
+  &:hover {
+    border: solid $border-width $favorite-border-highlight;
+    background-color: $favorite-background-highlight;
+    color: $favorite-text-highlight;
+  }
+}
+
+// ERROR
+.Switch.error.active {
+  border: solid $border-width $error-border;
+  background-color: $error-background;
+  color: $error-text;
+  &:focus {
+    border: solid $border-width $error-border-highlight;
+    background-color: $error-background-highlight;
+    color: $error-text-highlight;
+  }
+  &:hover {
+    border: solid $border-width $error-border-highlight;
+    background-color: $error-background-highlight;
+    color: $error-text-highlight;
+  }
+}

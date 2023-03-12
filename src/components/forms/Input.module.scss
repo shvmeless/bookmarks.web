@@ -1,0 +1,60 @@
+// IMPORTS
+@import "../../styles/extends";
+@import "../../styles/vars";
+
+// DEFAULT
+.Input {
+  padding: 0 1rem;
+  height: $size;
+
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+// PRIMARY
+.Input.primary {
+  border: solid $border-width $primary-border;
+  background-color: $primary-background;
+  color: $primary-text;
+  &:focus {
+    border: solid $border-width $primary-border-highlight;
+    background-color: $primary-background-highlight;
+    color: $primary-text-highlight;
+  }
+}
+
+// EXTRA
+.Input.extra {
+  border: solid $border-width $primary-border;
+  background-color: $primary-extra;
+  color: $primary-text;
+  &:focus {
+    border: solid $border-width $primary-border-highlight;
+    background-color: $primary-extra-highlight;
+    color: $primary-text-highlight;
+  }
+}
+
+// FAVORITE
+.Input.favorite {
+  border: solid $border-width $favorite-border;
+  background-color: $primary-extra;
+  color: $favorite-text;
+  &:focus {
+    border: solid $border-width $favorite-border-highlight;
+    background-color: $primary-extra-highlight;
+    color: $favorite-text-highlight;
+  }
+}
+
+// ERROR
+.Input.error {
+  border: solid $border-width $error-border;
+  background-color: $primary-extra;
+  color: $error-text;
+  &:focus {
+    border: solid $border-width $error-border-highlight;
+    background-color: $primary-extra-highlight;
+    color: $error-text-highlight;
+  }
+}
