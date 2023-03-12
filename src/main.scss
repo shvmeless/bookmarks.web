@@ -1,0 +1,26 @@
+@use "./styles/reset";
+@import "./styles/extends";
+@import "./styles/vars";
+
+@font-face {
+  font-family: "Lexend";
+  src: url("/fonts/Lexend.ttf");
+}
+
+html {
+  height: 100%;
+  font-size: $rem;
+}
+
+body {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  background-color: $general-background;
+  color: $primary-text;
+
+  font-family: $font-family;
+  line-height: $line-height;
+  font-size: $font-size;
+}

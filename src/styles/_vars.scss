@@ -1,0 +1,39 @@
+// GENERAL
+$general-background: rgb(15, 20, 25);
+
+// PRIMARY
+$primary-background: rgb(0, 5, 10);
+$primary-background-highlight: rgb(15, 20, 25);
+$primary-extra: rgb(15, 20, 25);
+$primary-extra-highlight: rgb(30, 35, 40);
+$primary-border: rgb(90, 95, 100);
+$primary-border-highlight: rgb(120, 125, 130);
+$primary-text: rgb(120, 125, 130);
+$primary-text-highlight: rgb(150, 155, 160);
+
+// FAVORITE
+$favorite-border: rgb(230, 180, 105);
+$favorite-border-highlight: rgb(245, 195, 120);
+$favorite-text: rgb(230, 180, 105);
+$favorite-text-highlight: rgb(245, 195, 120);
+$favorite-background: rgb(35, 30, 25);
+$favorite-background-highlight: rgb(70, 55, 40);
+
+// ERROR
+$error-border: rgb(200, 95, 95);
+$error-border-highlight: rgb(215, 110, 110);
+$error-text: rgb(200, 95, 95);
+$error-text-highlight: rgb(215, 110, 110);
+$error-background: rgb(30, 20, 25);
+$error-background-highlight: rgb(60, 30, 35);
+
+// TEXT
+$font-family: "Lexend";
+$line-height: 2.1rem;
+$font-size: 1.4rem;
+
+// SIZE
+$border-radius: 0.6rem;
+$border-width: 1px;
+$size: 4rem;
+$rem: 10px;
