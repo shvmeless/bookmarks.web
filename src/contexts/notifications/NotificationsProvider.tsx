@@ -1,5 +1,5 @@
 // IMPORTS
-import { NotificationsContext, useNotifications } from './notificationsContext'
+import { NotificationsContext, useNotifications } from './NotificationsContext'
 
 // COMPONENT
 export default function NotificationsProvider (props: {

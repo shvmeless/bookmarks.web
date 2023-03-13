@@ -1,0 +1,37 @@
+// IMPORTS
+@import '../../styles/extends';
+@import '../../styles/vars';
+
+// COMPONENT
+.NotificationMessage {
+  padding: 1rem;
+  cursor: pointer;
+  
+  .title {
+    width: 100%;
+    text-overflow: clip;
+    white-space: nowrap;
+    font-weight: bold;
+    overflow: hidden;
+  }
+
+  .message {
+    width: 100%;
+    font-style: italic;
+  }
+}
+
+// STATUS:
+.NotificationMessage.success {
+  @extend %success;
+}
+
+// STATUS:
+.NotificationMessage.info {
+  @extend %tertiary;
+}
+
+// STATUS:
+.NotificationMessage.error {
+  @extend %error;
+}
