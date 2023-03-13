@@ -2,38 +2,44 @@
 $general-background: rgb(15, 20, 25);
 
 // PRIMARY
+$primary: rgb(90, 95, 100);
+$primary-bright: lighten($primary, 15%);
 $primary-background: rgb(0, 5, 10);
-$primary-background-highlight: rgb(15, 20, 25);
-$primary-extra: rgb(15, 20, 25);
-$primary-extra-highlight: rgb(30, 35, 40);
-$primary-border: rgb(90, 95, 100);
-$primary-border-highlight: rgb(120, 125, 130);
-$primary-text: rgb(120, 125, 130);
-$primary-text-highlight: rgb(150, 155, 160);
+$primary-background-bright: rgb(10, 15, 20);
+
+// SECONDARY
+$secondary: rgb(90, 95, 100);
+$secondary-bright: lighten($secondary, 15%);
+$secondary-background: rgb(10, 15, 20);
+$secondary-background-bright: rgb(20, 25, 30);
+
+// TERTIARY
+$tertiary: rgb(75, 175, 240);
+$tertiary-bright: lighten($tertiary, 5%);
+$tertiary-background: rgba($tertiary, 5%);
+$tertiary-background-bright: rgba($tertiary, 15%);
 
 // FAVORITE
-$favorite-border: rgb(230, 180, 105);
-$favorite-border-highlight: rgb(245, 195, 120);
-$favorite-text: rgb(230, 180, 105);
-$favorite-text-highlight: rgb(245, 195, 120);
-$favorite-background: rgb(35, 30, 25);
-$favorite-background-highlight: rgb(70, 55, 40);
+$favorite: rgb(230, 180, 105);
+$favorite-bright: lighten($favorite, 5%);
+$favorite-background: rgba($favorite, 5%);
+$favorite-background-bright: rgba($favorite, 15%);
+
+// SUCCESS
+$success: rgb(185, 205, 80);
+$success-bright: lighten($success, 5%);
+$success-background: rgba($success, 5%);
+$success-background-bright: rgba($success, 15%);
 
 // ERROR
-$error-border: rgb(200, 95, 95);
-$error-border-highlight: rgb(215, 110, 110);
-$error-text: rgb(200, 95, 95);
-$error-text-highlight: rgb(215, 110, 110);
-$error-background: rgb(30, 20, 25);
-$error-background-highlight: rgb(60, 30, 35);
+$error: rgb(200, 95, 95);
+$error-bright: lighten($error, 5%);
+$error-background: rgba($error, 5%);
+$error-background-bright: rgba($error, 15%);
 
-// TEXT
-$font-family: "Lexend";
-$line-height: 2.1rem;
-$font-size: 1.4rem;
-
-// SIZE
+// BORDER
 $border-radius: 0.6rem;
 $border-width: 1px;
+
+// SIZE
 $size: 4rem;
-$rem: 10px;
