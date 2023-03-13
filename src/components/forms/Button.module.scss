@@ -8,76 +8,16 @@
   @extend %flex-center;
   padding: 0 1rem;
   height: $size;
-
+  
+  @extend %secondary;
   border-radius: $border-radius;
-  overflow: hidden;
   cursor: pointer;
-}
 
-// PRIMARY
-.Button.primary {
-  border: solid $border-width $primary-border;
-  background-color: $primary-background;
-  color: $primary-text;
   &:focus {
-    border: solid $border-width $primary-border-highlight;
-    background-color: $primary-background-highlight;
-    color: $primary-text-highlight;
+    @extend %secondary-bright;
   }
+  
   &:hover {
-    border: solid $border-width $primary-border-highlight;
-    background-color: $primary-background-highlight;
-    color: $primary-text-highlight;
-  }
-}
-
-// EXTRA
-.Button.extra {
-  border: solid $border-width $primary-border;
-  background-color: $primary-extra;
-  color: $primary-text;
-  &:focus {
-    border: solid $border-width $primary-border-highlight;
-    background-color: $primary-extra-highlight;
-    color: $primary-text-highlight;
-  }
-  &:hover {
-    border: solid $border-width $primary-border-highlight;
-    background-color: $primary-extra-highlight;
-    color: $primary-text-highlight;
-  }
-}
-
-// FAVORITE
-.Button.favorite {
-  border: solid $border-width $favorite-border;
-  background-color: $favorite-background;
-  color: $favorite-text;
-  &:focus {
-    border: solid $border-width $favorite-border-highlight;
-    background-color: $favorite-background-highlight;
-    color: $favorite-text-highlight;
-  }
-  &:hover {
-    border: solid $border-width $favorite-border-highlight;
-    background-color: $favorite-background-highlight;
-    color: $favorite-text-highlight;
-  }
-}
-
-// ERROR
-.Button.error {
-  border: solid $border-width $error-border;
-  background-color: $error-background;
-  color: $error-text;
-  &:focus {
-    border: solid $border-width $error-border-highlight;
-    background-color: $error-background-highlight;
-    color: $error-text-highlight;
-  }
-  &:hover {
-    border: solid $border-width $error-border-highlight;
-    background-color: $error-background-highlight;
-    color: $error-text-highlight;
+    @extend %secondary-bright;
   }
 }

@@ -7,19 +7,17 @@ export default function Input (props: {
   onChange: (value: string) => void
   autofocus?: boolean
   className?: string
-  color?: 'primary' | 'extra' | 'favorite' | 'error'
   placeholder?: string
 }): JSX.Element {
 
   // PROPS
   const autofocus = props.autofocus ?? false
   const className = props.className ?? ''
-  const color = props.color ?? 'primary'
   const placeholder = props.placeholder ?? '...'
 
   // RETURN
   return <input
-    className={`${css.Input} ${css[color]} ${className}`}
+    className={`${css.Input} ${className}`}
     placeholder={placeholder}
     type='text'
     autoFocus={autofocus}
