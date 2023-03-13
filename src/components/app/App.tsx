@@ -1,4 +1,5 @@
 // IMPORTS
+import AppProvider from './AppProvider'
 import AppSidebar from './AppSidebar'
 import css from './App.module.scss'
 import AppBody from './AppBody'
@@ -8,10 +9,14 @@ export default function App (): JSX.Element {
 
   // RETURN
   return <main className={css.App}>
-    <div className={css.AppContent}>
-      <AppSidebar/>
-      <AppBody/>
-    </div>
+    <AppProvider>
+
+      <div className={css.AppContent}>
+        <AppSidebar/>
+        <AppBody/>
+      </div>
+
+    </AppProvider>
   </main>
 
 }
